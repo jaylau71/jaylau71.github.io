@@ -2,15 +2,10 @@
 <html>
 <head>
 <script>
-var sunshine = new Audio();
-sunshine.src = "sunshine.mp3";
-function PlaySound() {
-    sunshine.play();
-}
 </script>
 </head>
 <body>
-<audio id="sunshine"> </audio>
-<button onclick="PlaySound()"> Excerpt 1 </button>
+<audio id="sunshine" src="sunshine.mp3"> </audio>
+<button onclick="document.getElementById('sunshine').play()">Play!</button>
 </body>
 </html>
